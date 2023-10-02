@@ -1,0 +1,4 @@
+baseURL = 'https://solutionsjsleblanc.ca/'
+languageCode = 'en-ca'
+title = 'Solutions J.S. Leblanc'
+theme = 'sjsl'
