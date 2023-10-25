@@ -1,3 +1,12 @@
 {{ define "main" }}
+  {{ $image := resources.Get "images/professional-photo.jpg" }}
+  {{ $image := $image.Process "resize 600x" }}
+  {{ with $image }}
+    <img
+      src="{{ $image.RelPermalink }}"
+      width="{{ $image.Width }}"
+      height="{{ $image.Height }}"
+    />
+  {{ end }}
   {{ .Content }}
 {{ end }}
