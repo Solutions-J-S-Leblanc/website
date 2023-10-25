@@ -1,0 +1,19 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "scripts": {
+    "check": "prettier . --check",
+    "format": "prettier . --write --ignore-unknown",
+    "prepare": "husky install"
+  },
+  "author": "Joel Leblanc",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
+    "prettier": "^3.0.3",
+    "prettier-plugin-go-template": "^0.0.15"
+  },
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
+  }
+}
